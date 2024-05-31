@@ -212,6 +212,7 @@ void CmdInterfaceLinux::mRxThreadProc(void * param)
 				cmd_if->mReadCallback(rx_buf, readed);
 			}
 		}
+        usleep(1e4);
 	}
 
 	delete[]rx_buf;
